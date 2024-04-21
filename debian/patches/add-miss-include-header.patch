@@ -1,0 +1,11 @@
+https://github.com/ros-tooling/libstatistics_collector/pull/183
+--- a/include/libstatistics_collector/moving_average_statistics/types.hpp
++++ b/include/libstatistics_collector/moving_average_statistics/types.hpp
+@@ -15,6 +15,7 @@
+ #ifndef LIBSTATISTICS_COLLECTOR__MOVING_AVERAGE_STATISTICS__TYPES_HPP_
+ #define LIBSTATISTICS_COLLECTOR__MOVING_AVERAGE_STATISTICS__TYPES_HPP_
+ 
++#include <cstdint>
+ #include <cmath>
+ #include <sstream>
+ #include <string>
