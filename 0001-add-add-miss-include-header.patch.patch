@@ -1,0 +1,39 @@
+From 63e04fb5683c9855e54984b1b4478bd08d449d47 Mon Sep 17 00:00:00 2001
+From: Zheng Junjie <zhengjunjie@iscas.ac.cn>
+Date: Sun, 21 Apr 2024 22:03:44 +0800
+Subject: [PATCH] add add-miss-include-header.patch
+
+---
+ debian/patches/add-miss-include-header.patch | 11 +++++++++++
+ debian/patches/series                        |  1 +
+ 2 files changed, 12 insertions(+)
+ create mode 100644 debian/patches/add-miss-include-header.patch
+ create mode 100644 debian/patches/series
+
+diff --git a/debian/patches/add-miss-include-header.patch b/debian/patches/add-miss-include-header.patch
+new file mode 100644
+index 0000000..e7b11cc
+--- /dev/null
++++ b/debian/patches/add-miss-include-header.patch
+@@ -0,0 +1,11 @@
++https://github.com/ros-tooling/libstatistics_collector/pull/183
++--- a/include/libstatistics_collector/moving_average_statistics/types.hpp
+++++ b/include/libstatistics_collector/moving_average_statistics/types.hpp
++@@ -15,6 +15,7 @@
++ #ifndef LIBSTATISTICS_COLLECTOR__MOVING_AVERAGE_STATISTICS__TYPES_HPP_
++ #define LIBSTATISTICS_COLLECTOR__MOVING_AVERAGE_STATISTICS__TYPES_HPP_
++ 
+++#include <cstdint>
++ #include <cmath>
++ #include <sstream>
++ #include <string>
+diff --git a/debian/patches/series b/debian/patches/series
+new file mode 100644
+index 0000000..42958ba
+--- /dev/null
++++ b/debian/patches/series
+@@ -0,0 +1 @@
++add-miss-include-header.patch
+-- 
+2.41.0
+
