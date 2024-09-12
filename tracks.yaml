@@ -1,3 +1,4 @@
+release_repo_url: git@github.com:revyos-ros/libstatistics_collector-release.git
 tracks:
   foxy:
     actions:
