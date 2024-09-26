@@ -1,0 +1,12 @@
+Source: ros-humble-libstatistics-collector
+Section: misc
+Priority: optional
+Maintainer: ROS Tooling Working Group <ros-tooling@googlegroups.com>
+Build-Depends: debhelper (>= 9.0.0), ros-humble-ament-cmake, ros-humble-ament-cmake-gtest <!nocheck>, ros-humble-ament-cmake-ros, ros-humble-ament-lint-auto <!nocheck>, ros-humble-ament-lint-common <!nocheck>, ros-humble-builtin-interfaces, ros-humble-performance-test-fixture <!nocheck>, ros-humble-rcl, ros-humble-rcpputils, ros-humble-rosidl-default-generators, ros-humble-statistics-msgs, ros-humble-std-msgs, ros-humble-ros-workspace, ros-humble-rosidl-typesupport-fastrtps-c, ros-humble-rosidl-typesupport-fastrtps-cpp
+Homepage: 
+Standards-Version: 3.9.2
+
+Package: ros-humble-libstatistics-collector
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-humble-builtin-interfaces, ros-humble-rcl, ros-humble-rcpputils, ros-humble-rosidl-default-runtime, ros-humble-statistics-msgs, ros-humble-std-msgs, ros-humble-ros-workspace
+Description: Lightweight aggregation utilities to collect statistics and measure message metrics.
