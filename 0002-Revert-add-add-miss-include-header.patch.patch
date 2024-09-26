@@ -1,0 +1,42 @@
+From 4e4c6abec34e1131ececbac0d8096beeb5eb0994 Mon Sep 17 00:00:00 2001
+From: Zheng Junjie <zhengjunjie@iscas.ac.cn>
+Date: Thu, 26 Sep 2024 13:42:41 +0800
+Subject: [PATCH 2/2] Revert "add add-miss-include-header.patch"
+
+This reverts commit 5aa9fcaee61c64991acc125872f8a2c7c90d32a9.
+
+upstream fix it.
+---
+ debian/patches/add-miss-include-header.patch | 11 -----------
+ debian/patches/series                        |  1 -
+ 2 files changed, 12 deletions(-)
+ delete mode 100644 debian/patches/add-miss-include-header.patch
+ delete mode 100644 debian/patches/series
+
+diff --git a/debian/patches/add-miss-include-header.patch b/debian/patches/add-miss-include-header.patch
+deleted file mode 100644
+index e7b11cc..0000000
+--- a/debian/patches/add-miss-include-header.patch
++++ /dev/null
+@@ -1,11 +0,0 @@
+-https://github.com/ros-tooling/libstatistics_collector/pull/183
+---- a/include/libstatistics_collector/moving_average_statistics/types.hpp
+-+++ b/include/libstatistics_collector/moving_average_statistics/types.hpp
+-@@ -15,6 +15,7 @@
+- #ifndef LIBSTATISTICS_COLLECTOR__MOVING_AVERAGE_STATISTICS__TYPES_HPP_
+- #define LIBSTATISTICS_COLLECTOR__MOVING_AVERAGE_STATISTICS__TYPES_HPP_
+- 
+-+#include <cstdint>
+- #include <cmath>
+- #include <sstream>
+- #include <string>
+diff --git a/debian/patches/series b/debian/patches/series
+deleted file mode 100644
+index 42958ba..0000000
+--- a/debian/patches/series
++++ /dev/null
+@@ -1 +0,0 @@
+-add-miss-include-header.patch
+-- 
+2.45.2
+
