@@ -1,4 +1,4 @@
-From 4e4c6abec34e1131ececbac0d8096beeb5eb0994 Mon Sep 17 00:00:00 2001
+From 711f3cba52fcca0c396afed614cb6bccb287d749 Mon Sep 17 00:00:00 2001
 From: Zheng Junjie <zhengjunjie@iscas.ac.cn>
 Date: Thu, 26 Sep 2024 13:42:41 +0800
 Subject: [PATCH 2/2] Revert "add add-miss-include-header.patch"
