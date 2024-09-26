@@ -1,3 +1,26 @@
+## libstatistics_collector (humble) - 1.3.2-2
+
+The packages in the `libstatistics_collector` repository were released into the `humble` distro by running `/home/z572/gits/revyos-ros/venv2/bin/bloom-release -r humble libstatistics_collector --override-release-repository-push-url git@github.com:revyos-ros/libstatistics_collector-release.git` on `Thu, 26 Sep 2024 05:44:10 -0000`
+
+The `libstatistics_collector` package was released.
+
+Version of package(s) in repository `libstatistics_collector`:
+
+- upstream repository: https://github.com/ros-tooling/libstatistics_collector.git
+- release repository: https://github.com/revyos-ros/libstatistics_collector-release.git
+- rosdistro version: `1.3.2-1`
+- old version: `1.3.2-1`
+- new version: `1.3.2-2`
+
+Versions of tools used:
+
+- bloom version: `0.12.0`
+- catkin_pkg version: `1.0.0`
+- rosdep version: `0.22.2`
+- rosdistro version: `0.9.0`
+- vcstools version: `0.1.42`
+
+
 ## libstatistics_collector (humble) - 1.3.2-1
 
 The packages in the `libstatistics_collector` repository were released into the `humble` distro by running `/home/z572/gits/revyos-ros/venv/bin/bloom-release -r humble libstatistics_collector --override-release-repository-push-url git@github.com:revyos-ros/libstatistics_collector-release.git` on `Thu, 12 Sep 2024 04:22:51 -0000`
