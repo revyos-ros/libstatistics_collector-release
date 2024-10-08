@@ -1,0 +1,12 @@
+Source: ros-jazzy-libstatistics-collector
+Section: misc
+Priority: optional
+Maintainer: ROS Tooling Working Group <ros-tooling@googlegroups.com>
+Build-Depends: debhelper (>= 9.0.0), ros-jazzy-ament-cmake-gtest <!nocheck>, ros-jazzy-ament-cmake-ros, ros-jazzy-ament-lint-auto <!nocheck>, ros-jazzy-ament-lint-common <!nocheck>, ros-jazzy-builtin-interfaces, ros-jazzy-performance-test-fixture <!nocheck>, ros-jazzy-rcl, ros-jazzy-rcpputils, ros-jazzy-rcutils <!nocheck>, ros-jazzy-rmw, ros-jazzy-rosidl-default-generators <!nocheck>, ros-jazzy-rosidl-default-runtime <!nocheck>, ros-jazzy-statistics-msgs, ros-jazzy-std-msgs <!nocheck>, ros-jazzy-ros-workspace
+Homepage: 
+Standards-Version: 3.9.2
+
+Package: ros-jazzy-libstatistics-collector
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-jazzy-builtin-interfaces, ros-jazzy-rcl, ros-jazzy-rcpputils, ros-jazzy-rmw, ros-jazzy-statistics-msgs, ros-jazzy-ros-workspace
+Description: Lightweight aggregation utilities to collect statistics and measure message metrics.
