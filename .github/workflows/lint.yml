@@ -6,13 +6,13 @@ jobs:
   ament_lint:
     runs-on: ubuntu-latest
     container:
-      image: rostooling/setup-ros-docker:ubuntu-noble-latest
+      image: rostooling/setup-ros-docker:ubuntu-focal-latest
     strategy:
       fail-fast: false
       matrix:
-        linter: [copyright, cpplint, flake8, pep257, uncrustify, xmllint]
+        linter: [copyright, cppcheck, cpplint, flake8, pep257, uncrustify, xmllint]
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v3
       - uses: ros-tooling/action-ros-lint@v0.1
         with:
           linter: ${{ matrix.linter }}
